@@ -1,0 +1,45 @@
+1.Python Key Features-
+
+Interpreted
+Dynamically typed
+Easy to understand
+object oriented
+Large no of library
+portable
+
+2.Dynamically typed-Variable type is decided at runtime, not at compile time
+
+3.What made it portable- Your python code is conver
+
+4.Interpreted vs compiler- Interpreter                                           Compiler
+                           It runs the code line by line                        It runs the whole code in one go
+                           Errors show immediately                              Errors are shown after compilation
+                           Slower in Execution                                  Faster in execution
+                          Eg  Python ,JS                                        Eg C++, JAVA
+
+5.Mutable vs Immutable- Mutable-Can be changed after creation like list,set,dict
+                        Immutable-Cannot be changed after creation like tuple,int,float
+
+6.Lists,tuple,set,dict- List                    Tuple                   Set                     Dictionary
+                       Mutable                 Immutable                Mutable                  Mutable
+                       Ordered                 Ordered                  Unordered                Ordered
+                       Duplicates              Duplicates             No Duplicates              Only values duplicates
+
+7.Lambda function-It is a small anonymous functions in python.It is used when you need a single one line function.eg add = lambda a, b: a + b
+
+8.List append vs list extend- list.append Adds as a single element
+                              list.extend Adds all elements to the list.
+
+9.== Vs "is"- == Value check 
+              is Address check
+
+10.return vs print- print-prints the value or displays the value
+                    return- sends the value back
+
+11.remove Vs pop- remove-Removes an item by its value.
+                  pop-Removes an item by its index and returns it
+
+12.exception vs errors- Exception                                           Error
+                        Can usually be handled with try-except              Often prevents execution
+                        Occurs during runtime                               Can occur before or during execution
+                        Example: ZeroDivisionError                          Example: SyntaxError, IndentationError
