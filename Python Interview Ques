@@ -43,3 +43,23 @@ portable
                         Can usually be handled with try-except              Often prevents execution
                         Occurs during runtime                               Can occur before or during execution
                         Example: ZeroDivisionError                          Example: SyntaxError, IndentationError
+
+13.Garbage Collector-import gc-Its job is to free memory occupied by objects that are no longer being used.Python primarily uses Reference Counting.
+Every object keeps track of how many references point to it.When reference count becomes 0, object is deleted.
+
+14.__init__()-is a constructor that is automatically called when an object is created. 
+              It is used to initialize object attributes.
+
+15.Generator -A generator is a special type of function that returns values one by one instead of returning all values at once.
+                 It uses the yield keyword.
+                 saves memory
+                 used for larger data.
+
+16.return vs yield- return -> gives all results and ends
+                    yield  -> gives one result, pauses, continues later
+
+17. yield - used inside a generator function. It returns one value at a time, pauses the function and then continues later when requested.
+
+18.deep copy vs shallow copy-deep copy- Copy everything
+                             Shallow Copy = Copy outer layer only
+
