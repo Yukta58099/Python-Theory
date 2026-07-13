@@ -27,14 +27,14 @@ portable
 
 7.Lambda function-It is a small anonymous functions in python.It is used when you need a single one line function.eg add = lambda a, b: a + b
 
-8.List append vs list extend- list.append Adds as a single element
-                              list.extend Adds all elements to the list.
+8.List append vs list extend- list.append Adds the entire element as a single element.
+                              list.extend Adds each element individually to the list.
 
 9.== Vs "is"- == Value check 
               is Address check
 
 10.return vs print- print-prints the value or displays the value
-                    return- sends the value back
+                    return- sends the value back from the fun.
 
 11.remove Vs pop- remove-Removes an item by its value.
                   pop-Removes an item by its index and returns it
