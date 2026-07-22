@@ -1,0 +1,21 @@
+file name-data.txt  output: Hello Python
+
+Read Entire File:
+
+file = open("data.txt", "r")
+content = file.read()
+print(content)
+file.close()
+
+Read Line by Line:
+
+file = open("data.txt", "r")
+for line in file:
+    print(line)
+file.close()
+
+Best Practice (with)-automatically closes the file
+
+with open("data.txt", "r") as file:
+    content = file.read()
+print(content)
