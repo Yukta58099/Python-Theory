@@ -9,7 +9,8 @@ portable
 
 2.Dynamically typed-Variable type is decided at runtime, not at compile time
 
-3.What made it portable- Your python code is conver
+3.What made it portable- Your python code is converted into byte code which is 0 and 1 and python interpreter handles 
+                         execution on any system.
 
 4.Interpreted vs compiler- Interpreter                                           Compiler
                            It runs the code line by line                        It runs the whole code in one go
@@ -60,6 +61,18 @@ Every object keeps track of how many references point to it.When reference count
 
 17. yield - used inside a generator function. It returns one value at a time, pauses the function and then continues later when requested.
 
-18.deep copy vs shallow copy-deep copy- Copy everything
-                             Shallow Copy = Copy outer layer only
+18.deep copy vs shallow copy-deep copy- Copy everything,   function-copy.deepcopy() , Changes in copy do not affect the original.
+                             Shallow Copy = Copy outer layer only,   function-copy.copy(), Changes in copy does affect the original.
+
+19.Pandas vs Matplotlib vs NumPy vs PySpark -Library          Purpose
+                                             NumPy            Numerical Operations
+                                             Pandas           Data Manipulation
+                                             Matplotlib       Visualization
+                                             PySpark          Big Data Processing
+
+20.Decorators - is a function that takes another class or function as a input and add some behaviour to it 
+                without changing the original code.Using by -@my_decorator 
+                real life example-Think of wrapping a gift box.Gift stays the same but wrapper add something extra.
+
+21.
 
