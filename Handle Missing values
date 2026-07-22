@@ -1,0 +1,21 @@
+import pandas as pd --Example
+data = {
+    "Name": ["A", "B", "C"],
+    "Age": [25, None, 30]
+}
+df = pd.DataFrame(data)
+print(df)
+
+df.isnull() --Missing value check
+
+df.dropna() --Remove Missing values
+
+df["Age"].fillna(df["Age"].mean(), inplace=True) --Fill missing values
+
+
+
+Missing values ko handle karne ke liye:
+
+dropna() → rows delete
+fillna() → value replace
+mean, median, mode se fill kar sakte hain
