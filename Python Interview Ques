@@ -1,68 +1,101 @@
-1.Python Key Features-
+1.Python Key Features-Interpreted
+                      Dynamically typed
+                      Easy to understand
+                      object oriented
+                      Large no of library
+                      portable
+---------------------------------------------------------------------------------------------------------------------
 
-Interpreted
-Dynamically typed
-Easy to understand
-object oriented
-Large no of library
-portable
+2.Dynamically typed-  Variable type is decided at runtime, not at compile time
+                      Eg-def add(a, b):
+                         return a + b
+                         print(add(2, 3))        # integers
+                         print(add("A", "B"))    # strings
+                         print(add([1], [2]))    # lists
 
-2.Dynamically typed-Variable type is decided at runtime, not at compile time
+-----------------------------------------------------------------------------------------------------------------------
 
 3.What made it portable- Your python code is converted into byte code which is 0 and 1 and python interpreter handles 
                          execution on any system.
+
+-------------------------------------------------------------------------------------------------------------------------
 
 4.Interpreted vs compiler- Interpreter                                           Compiler
                            It runs the code line by line                        It runs the whole code in one go
                            Errors show immediately                              Errors are shown after compilation
                            Slower in Execution                                  Faster in execution
-                          Eg  Python ,JS                                        Eg C++, JAVA
+                           Eg  Python ,JS                                        Eg C++, JAVA
+
+---------------------------------------------------------------------------------------------------------------------------
 
 5.Mutable vs Immutable- Mutable-Can be changed after creation like list,set,dict
                         Immutable-Cannot be changed after creation like tuple,int,float
 
+----------------------------------------------------------------------------------------------------------------------------
 6.Lists,tuple,set,dict- List                    Tuple                   Set                     Dictionary
                        Mutable                 Immutable                Mutable                  Mutable
                        Ordered                 Ordered                  Unordered                Ordered
                        Duplicates              Duplicates             No Duplicates              Only values duplicates
+-------------------------------------------------------------------------------------------------------------------------------
 
-7.Lambda function-It is a small anonymous functions in python.It is used when you need a single one line function.eg add = lambda a, b: a + b
+7.Lambda function-It is a small anonymous functions in python.It is used when you need a single one line function.
+                   eg add = lambda a, b: a + b
+
+-------------------------------------------------------------------------------------------------------------------------------
 
 8.List append vs list extend- list.append Adds the entire element as a single element.
                               list.extend Adds each element individually to the list.
 
+---------------------------------------------------------------------------------------------------------------------------------------
+
 9.== Vs "is"- == Value check 
               is Address check
+
+---------------------------------------------------------------------------------------------------------------------------------------
 
 10.return vs print- print-prints the value or displays the value
                     return- sends the value back from the fun.
 
+----------------------------------------------------------------------------------------------------------------------------------------
 11.remove Vs pop- remove-Removes an item by its value.
                   pop-Removes an item by its index and returns it
+-------------------------------------------------------------------------------------------------------------------------------------------
 
 12.exception vs errors- Exception                                           Error
                         Can usually be handled with try-except              Often prevents execution
                         Occurs during runtime                               Can occur before or during execution
                         Example: ZeroDivisionError                          Example: SyntaxError, IndentationError
 
+----------------------------------------------------------------------------------------------------------------------------------------------------
+
 13.Garbage Collector-import gc-Its job is to free memory occupied by objects that are no longer being used.Python primarily uses Reference Counting.
-Every object keeps track of how many references point to it.When reference count becomes 0, object is deleted.
+Every object keeps track of how many references point to it.When reference count becomes 0, object is deleted..
+
+----------------------------------------------------------------------------------------------------------------------------------------------------
 
 14.__init__()-is a constructor that is automatically called when an object is created. 
               It is used to initialize object attributes.
+
+-----------------------------------------------------------------------------------------------------------------------------------------
 
 15.Generator -A generator is a special type of function that returns values one by one instead of returning all values at once.
                  It uses the yield keyword.
                  saves memory
                  used for larger data.
 
+-------------------------------------------------------------------------------------------------------------------------------------
+
 16.return vs yield- return -> gives all results and ends
                     yield  -> gives one result, pauses, continues later
 
+--------------------------------------------------------------------------------------------------------------------------------
+
 17. yield - used inside a generator function. It returns one value at a time, pauses the function and then continues later when requested.
 
+------------------------------------------------------------------------------------------------------------------------------------
 18.deep copy vs shallow copy-deep copy- Copy everything,   function-copy.deepcopy() , Changes in copy do not affect the original.
                              Shallow Copy = Copy outer layer only,   function-copy.copy(), Changes in copy does affect the original.
+------------------------------------------------------------------------------------------------------------------------------
 
 19.Pandas vs Matplotlib vs NumPy vs PySpark -Library          Purpose
                                              NumPy            Numerical Operations
@@ -70,9 +103,53 @@ Every object keeps track of how many references point to it.When reference count
                                              Matplotlib       Visualization
                                              PySpark          Big Data Processing
 
+----------------------------------------------------------------------------------------------------------------------------
+
 20.Decorators - is a function that takes another class or function as a input and add some behaviour to it 
                 without changing the original code.Using by -@my_decorator 
                 real life example-Think of wrapping a gift box.Gift stays the same but wrapper add something extra.
 
-21.
+------------------------------------------------------------------------------------------------------------------------------
 
+21.*args vs **kwargs - Args                                                     Kwargs
+                      Non keywords arguments(student("Yukta", 22))              Keywords Arguments(student(age=22, name="Yukta"))
+                      Collects value in tuples and then pass                    Collect all extra keyword arguments in dictionary
+                      Used when we donot  know the no if values will be passed  Used when we do not know how many named arguments will be passed
+                      def add_numbers(*args):--Eg                               def show_info(**kwargs): --Eg
+                        print(args)                                             print(kwargs)
+                        return sum(args)                                        show_info(name="Rajat", age=30, city="Pune")
+                      print(add_numbers(10, 20, 30))
+
+----------------------------------------------------------------------------------------------------------------------------------------
+
+22.Why Doesn't Python Support Traditional Method Overloading? -Bcoz function are identified by their name not by parmeter count or type 
+                              as python is dynamically typed.
+                              It can be handled by default values or *args/**Kwargs
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+23.Overloading-same method but different parameters in same class.
+   Overriding -When a child class redefined a same method from the parent class.We need inheritance for overriding always.Runtime
+    Eg-class Animal:
+          def sound(self):
+              print("Animal makes a sound")
+      class Dog(Animal):
+          def sound(self):
+              print("Dog barks")
+      dog = Dog()
+      dog.sound()
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+
+24.List Comprehension - is a concise way to create a new list using a single line of code.
+                        [expression for item in iterable]
+                        s = []
+                        for i in range(5):              ---->                       s = [i * i for i in range(5)]
+                          print(s)            
+                          s.append(i * i)
+                        print(s)
+
+-------------------------------------------------------------------------------------------------------------------------------------
+
+25.
+ 
