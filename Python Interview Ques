@@ -151,5 +151,26 @@ Every object keeps track of how many references point to it.When reference count
 
 -------------------------------------------------------------------------------------------------------------------------------------
 
-25.
+25.Iterator vs Iterable -
+Iterable-An object capable of returning an iterator using iter() (__iter__() method).
+Iterator-An object that produces the next value using next() (__next__() method) and keeps track of iteration state.
+
+Iterator                                          Iterator
+Stores collection of items.                    Produces elements one by one.                       
+Can create multiple iterators.                 Maintains state.
+Cannot directly use next().                    Works with next().
+
+every iterator is iterable, but not every iterable is an iterator.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+26.Multiprocessing vs Threading-
+Threading uses multiple threads within the same process, shares memory,  and is best for I/O-bound tasks.
+Multiprocessing uses multiple processes with separate memory, and is best for CPU-bound tasks.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+ 
  
