@@ -155,7 +155,7 @@ Every object keeps track of how many references point to it.When reference count
 Iterable-An object capable of returning an iterator using iter() (__iter__() method).
 Iterator-An object that produces the next value using next() (__next__() method) and keeps track of iteration state.
 
-Iterator                                          Iterator
+Iterable                                         Iterator
 Stores collection of items.                    Produces elements one by one.                       
 Can create multiple iterators.                 Maintains state.
 Cannot directly use next().                    Works with next().
